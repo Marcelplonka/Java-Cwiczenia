@@ -3,13 +3,13 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         long startTime = System.currentTimeMillis();
-        SortMethod merge = new MergeSort();
+        SortMethod quick = new QuickSort();
 
         int[] arr = {65, 25, 12, 22, 11};
         boolean sorted = checkIfSorted(arr);
 
         if (!sorted)
-            merge.sort(arr);
+            quick.sort(arr);
 
         printArray(arr);
         long endTime = System.currentTimeMillis();
@@ -43,4 +43,4 @@ public class Main {
 }
 
 // Write a program to sort the given array - sort method
-// Insertion Sort - Iterative Approach
+// Quick Sort
