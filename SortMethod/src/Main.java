@@ -2,13 +2,13 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        SortMethod bubble = new BubbleSort();
+        SortMethod insertion = new InsertionSort();
 
         int[] arr = {65, 25, 12, 22, 11};
         boolean sorted = checkIfSorted(arr);
 
         if (!sorted)
-            bubble.sort(arr);
+            insertion.sort(arr);
 
         printArray(arr);
     }
